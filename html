@@ -3,75 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>My Pet Shop</title>
 
-    <!-- CSS -->
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            background-color: #fef6e4;
         }
 
         header {
-            background: #333;
-            color: #fff;
-            padding: 15px;
+            background-color: #ff8ba7;
+            color: white;
             text-align: center;
+            padding: 20px;
         }
 
         nav {
-            background: #555;
+            background-color: #ffc6c7;
             padding: 10px;
             text-align: center;
         }
 
         nav a {
-            color: white;
-            margin: 0 10px;
             text-decoration: none;
+            margin: 0 15px;
+            color: #333;
+            font-weight: bold;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #ff8ba7;
         }
 
-        .container {
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #333;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #ff8ba7;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #ff6f91;
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            margin: 15px;
             padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         footer {
-            background: #333;
-            color: #fff;
+            background-color: #ff8ba7;
+            color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to My Website</h1>
-    <p>Your tagline goes here</p>
+    <h1>🐾 Welcome to My Pet Shop</h1>
+    <p>Your one-stop place for happy and healthy pets!</p>
 </header>
 
 <nav>
     <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
+    <a href="#">Pets</a>
+    <a href="#">Products</a>
     <a href="#">Contact</a>
 </nav>
 
-<div class="container">
-    <h2>Home</h2>
-    <p>This is your homepage. Start building your content here.</p>
-</div>
+<section class="hero">
+    <h1>Find Your Perfect Companion</h1>
+    <p>We offer a variety of pets and supplies for your lovely friends.</p>
+    <a href="#" class="btn">Shop Now</a>
+</section>
+
+<section class="section">
+    <h2>Our Pets</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🐶 Dogs</h3>
+            <p>Loyal and friendly companions.</p>
+        </div>
+
+        <div class="card">
+            <h3>🐱 Cats</h3>
+            <p>Playful and adorable pets.</p>
+        </div>
+
+        <div class="card">
+            <h3>🐦 Birds</h3>
+            <p>Colorful and cheerful friends.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Why Choose Us?</h2>
+    <p>✔ Healthy pets<br>✔ Affordable prices<br>✔ Friendly service</p>
+</section>
 
 <footer>
-    <p>&copy; 2026 My Website</p>
+    <p>&copy; 2026 My Pet Shop | All Rights Reserved</p>
 </footer>
 
 </body>
